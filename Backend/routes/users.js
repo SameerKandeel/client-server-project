@@ -10,6 +10,7 @@ var valdiation = require('../validations.js')
 var activations= []
 var resetPasswords= []
 var emailChange= []
+//commit
 
 
 router.route('/').get((req, res) => {
