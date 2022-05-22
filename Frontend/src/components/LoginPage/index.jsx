@@ -21,7 +21,7 @@ export default function LoginPage({ match }) {
     // const usr = useSelector(currentUser);
     let history = useHistory();
     const rememberme = localStorage.getItem('remeberme');
-    if(rememberme =='true'){
+    if(rememberme ==='true'){
         history.push("/LoadUser");
     }
 
@@ -30,11 +30,11 @@ export default function LoginPage({ match }) {
     }
 
     const validateLogin=()=> {
-        if(userEmail=="" || userPassword==""){
+        if(userEmail==="" || userPassword===""){
             setStatus("You Must fill all fields");
             return;
         }
-        if(reCAPTCHAValue==0){
+        if(reCAPTCHAValue===0){
             setStatus("You Must Solve the ReCAPTCHA");
             return;
         }
@@ -43,7 +43,7 @@ export default function LoginPage({ match }) {
                 .then(response => {
                 var res= JSON.parse(JSON.stringify(response.data));
 
-                if(res.Email!="" && res.Email == userEmail.toLowerCase()){
+                if(res.Email!=="" && res.Email === userEmail.toLowerCase()){
                     setStatus("Ok " + res.Name);
                     dispatch(setLogged(1));
                     dispatch(setCurrentUser({

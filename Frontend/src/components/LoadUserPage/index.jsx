@@ -15,7 +15,7 @@ export default function DashboardPage({ match }) {
 
     let history = useHistory();
     const rememberme = localStorage.getItem('remeberme');
-    if(rememberme =='true'){
+    if(rememberme ==='true'){
         const email = localStorage.getItem('email');
         const password = localStorage.getItem('password');
         setEm(email)
@@ -23,7 +23,7 @@ export default function DashboardPage({ match }) {
         .then(response => {
         var res= JSON.parse(JSON.stringify(response.data));
 
-        if(res.Email!="" && res.Email == email.toLowerCase()){
+        if(res.Email!=="" && res.Email === email.toLowerCase()){
             dispatch(setLogged(1));
             dispatch(setCurrentUser({
                 Name: res.Name,

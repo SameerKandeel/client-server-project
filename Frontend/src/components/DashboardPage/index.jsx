@@ -11,12 +11,12 @@ export default function DashboardPage({ match }) {
     const currentuser = useSelector(currentUser);
     let history = useHistory();
     const rememberme = localStorage.getItem('remeberme');
-    if(rememberme =='true' && isLogged==0){
+    if(rememberme ==='true' && isLogged===0){
         history.push("/LoadUser");
     }
 
         
-    if(isLogged==0){
+    if(isLogged===0){
         
         history.push("/sign-in");
         return(

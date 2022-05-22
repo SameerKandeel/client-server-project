@@ -11,7 +11,7 @@ export default function AboutPage({ match }) {
     const currentuser = useSelector(currentUser);
     let history = useHistory();
         
-    if(isLogged==0){
+    if(isLogged===0){
         
         history.push("/sign-in");
         return(

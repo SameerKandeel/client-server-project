@@ -90,31 +90,31 @@ export default function ProfileDetailsPage({ match }) {
     const updateProfile=()=> {
         updateProfileStatus("Please Wait...")
         
-        if(Name==""){
+        if(Name===""){
             updateProfileStatus("First Name Can't be empty")
             return;
         }
-        if(FamilyName==""){
+        if(FamilyName===""){
             updateProfileStatus("Last Name Can't be empty")
             return;
         }
-        if(currentuser.City !="" && City==""){
+        if(currentuser.City !=="" && City===""){
             updateProfileStatus("City Can't be empty")
             return;
         }
-        if(currentuser.PhoneNumber !="" && PhoneNumber==""){
+        if(currentuser.PhoneNumber !=="" && PhoneNumber===""){
             updateProfileStatus("PhoneNumber Can't be empty")
             return;
         }
-        if(currentuser.ZipCode !="" && ZipCode==""){  
+        if(currentuser.ZipCode !=="" && ZipCode===""){  
             updateProfileStatus("ZipCode Can't be empty")
             return;
         }
-        if(currentuser.Street !="" && Street==""){
+        if(currentuser.Street !=="" && Street===""){
             updateProfileStatus("Street Can't be empty")
             return;
         }
-        if(currentuser.Country !="" && Country==""){
+        if(currentuser.Country !=="" && Country===""){
             updateProfileStatus("Country Can't be empty")
             return;
         }
@@ -163,7 +163,7 @@ export default function ProfileDetailsPage({ match }) {
             }
     
         
-    if(isLogged==0){
+    if(isLogged===0){
         
         history.push("/sign-in");
         return(

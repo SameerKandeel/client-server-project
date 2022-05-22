@@ -18,7 +18,7 @@ export default class updateEmailPage extends Component {
         axios.get('http://localhost:5000/users/confirmemail?'+window.location.href.split('?')[1])
             .then((response) => {
                 this.setState({status:response.data})
-                if(response.data=="Your Email Has been Updated successfully!!")
+                if(response.data==="Your Email Has been Updated successfully!!")
                     window.location.href = 'logout'
             })
             .catch((error) => {
