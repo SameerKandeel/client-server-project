@@ -56,11 +56,11 @@ export default class UpdatePasswordPage extends Component {
                                             </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Confirm Password" onChange={this.handlePasswordChange}/>
+                                                id="exampleInputPassword" placeholder="Enter New Password" onChange={this.handlePasswordChange}/>
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password" onChange={this.handleRepasswordChange}/>
+                                                id="exampleInputPassword" placeholder="Confirm New Password" onChange={this.handleRepasswordChange}/>
                                         </div>
                                         <button type="button" class="btn btn-primary btn-user btn-block" onClick={this.updatePassword}>
                                     Update Password
