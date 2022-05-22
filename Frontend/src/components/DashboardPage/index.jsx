@@ -170,14 +170,14 @@ export default function DashboardPage({ match }) {
                         <div class="clm" style={{border:"5px", borderStyle: "solid"}}>
                             <img src="img/Buy-Cell-Phones.jpg" alt="s2" style={{width:"70%",height:"100%", float: "right"}}/>
                             <a href="Buy-CellPhone">
-                                <img  src="img/add.jpg" alt="s2" style={{width:"20%",height:"20%", float: "left"}}/>
+                                <img  src="img/add.jpg" alt="s2" style={{width:"20%",height:"45%", float: "left"}}/>
                                 <p id="onlypc" style={{float: "left"}}>Buy Cell Phone</p>
                             </a>
                         </div>
                         <div class="clm" style={{Border:"5px",borderStyle: "solid"}}>
-                            <img src="img/Buy-PC.jpg" alt="s2" style={{width:"75%",height:"100%", float: "right"}}/>
+                            <img src="img/Buy-PC.jpg" alt="s2" style={{width:"70%",height:"100%", float: "right"}}/>
                             <a href="Buy-PC">
-                                <img  src="img/add.jpg" alt="s2" style={{width:"20%",height:"20%", float: "left"}}/> 
+                                <img  src="img/add.jpg" alt="s2" style={{width:"20%",height:"45%", float: "left"}}/> 
                                 <p id="onlypc" style={{float: "left"}}>Buy PC</p>
                             </a>
                         </div>
