@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { logged, setLogged } from "../../redux/Global";
 import { currentUser, setCurrentUser } from "../../redux/Global";
 import { useHistory } from "react-router-dom";
+require('dotenv').config({path: __dirname + '/.env'})
 
 
 export default function LoginPage({ match }) {
@@ -39,7 +40,7 @@ export default function LoginPage({ match }) {
             return;
         }
         setStatus("Please Wait...");
-            axios.post('http://localhost:5000/users/getuser',{email: userEmail, password: userPassword, recaptcha:reCAPTCHAValue})
+            axios.post('http://localhost:' + process.env['SERVER_PORT'] + '/users/getuser',{email: userEmail, password: userPassword, recaptcha:reCAPTCHAValue})
                 .then(response => {
                 var res= JSON.parse(JSON.stringify(response.data));
 

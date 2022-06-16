@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import ReCAPTCHA from "react-google-recaptcha";
+require('dotenv').config({path: __dirname + '/.env'})
 
 export default class RegistrationPage extends Component {
     constructor(props) {
@@ -54,7 +55,7 @@ export default class RegistrationPage extends Component {
         return;
     }
     this.setState({status: "Please Wait..."});
-    axios.post('http://localhost:5000/users/add',{
+    axios.post('http://localhost:' + process.env['SERVER_PORT'] +  '/users/add',{
         //email: this.state.email, password: this.state.password
         firstname: this.state.name,
         lastname: this.state.familyName,

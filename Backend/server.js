@@ -1,9 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-require('dotenv').config();
+require('dotenv').config({path: '../' +__dirname + '/.env'})
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || process.env['PORT'];
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -24,5 +24,6 @@ app.use('/promocodes', promocodeRouter);
 app.use('/users', usersRouter);
 
 app.listen(port, () => {
+  console.log('../' + {__dirname})
     console.log(`Server is running on port: ${port}`);
 });
