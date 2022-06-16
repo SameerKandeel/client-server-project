@@ -167,7 +167,7 @@ export default function AboutPage({ match }) {
     <a >Karmiel Ort Braude</a>
 <hr/>
     <h4>E-mail</h4>
-    <a href="mailto:Mhemmad01@gmail.com">Mhemmad01@gmail.com</a>
+    <a href="mailto:csprojecttest@hotmail.com">csprojecttest@hotmail.com</a>
     <hr/>
 
     <h4>Website</h4>
